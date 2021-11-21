@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Menu Bar</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <nav id="navbar">
+            <img src="./images/logo2.png" class="logo">
+            <ul id="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos ratione, quod, deserunt mollitia ex repellat vitae quia atque fuga culpa, blanditiis laudantium et earum laboriosam unde nemo porro perspiciatis? Voluptatibus omnis fugiat quaerat accusantium eum, voluptas sequi, et commodi ea eligendi nemo, cupiditate doloremque quidem eius unde consectetur repellat quos provident quibusdam laborum repudiandae eaque? Eius odio nihil veritatis consequuntur. Corporis optio, dolorum laborum quam magni id unde natus consequuntur facere praesentium, accusantium, nesciunt dicta voluptatem est amet animi! Quaerat nisi expedita neque. Sint, exercitationem quibusdam sed nulla, ducimus, laboriosam eos non rem quod maiores necessitatibus omnis vitae itaque aliquid.</p>
+
+
+    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos ratione, quod, deserunt mollitia ex repellat vitae quia atque fuga culpa, blanditiis laudantium et earum laboriosam unde nemo porro perspiciatis? Voluptatibus omnis fugiat quaerat accusantium eum, voluptas sequi, et commodi ea eligendi nemo, cupiditate doloremque quidem eius unde consectetur repellat quos provident quibusdam laborum repudiandae eaque? Eius odio nihil veritatis consequuntur. Corporis optio, dolorum laborum quam magni id unde natus consequuntur facere praesentium, accusantium, nesciunt dicta voluptatem est amet animi! Quaerat nisi expedita neque. Sint, exercitationem quibusdam sed nulla, ducimus, laboriosam eos non rem quod maiores necessitatibus omnis vitae itaque aliquid.</p>
+
+
+    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos ratione, quod, deserunt mollitia ex repellat vitae quia atque fuga culpa, blanditiis laudantium et earum laboriosam unde nemo porro perspiciatis? Voluptatibus omnis fugiat quaerat accusantium eum, voluptas sequi, et commodi ea eligendi nemo, cupiditate doloremque quidem eius unde consectetur repellat quos provident quibusdam laborum repudiandae eaque? Eius odio nihil veritatis consequuntur. Corporis optio, dolorum laborum quam magni id unde natus consequuntur facere praesentium, accusantium, nesciunt dicta voluptatem est amet animi! Quaerat nisi expedita neque. Sint, exercitationem quibusdam sed nulla, ducimus, laboriosam eos non rem quod maiores necessitatibus omnis vitae itaque aliquid.</p>
+
+    <script>
+        var navbar = document.getElementById("navbar")
+        var menu = document.getElementById("menu")
+
+        window.onscroll=function()
+        {
+            if(window.pageYOffset>=menu.offsetTop)
+            {
+                navbar.classList.add("sticky")
+            }
+            else
+            {
+                navbar.classList.remove("sticky")
+            }
+        }
+    </script>
+</body>
+</html>
